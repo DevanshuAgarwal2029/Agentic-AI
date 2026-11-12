@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(python3 -m pip install -r requirements.txt)",
+      "Bash(python3:*)",
+      "Bash(curl -s http://localhost:8000/api/health)",
+      "Bash(curl -s -X POST http://localhost:8000/api/predict -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(curl -s \"http://localhost:8000/api/transaction/1\")",
+      "Bash(pkill -f \"uvicorn app.main\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/agent/analyze -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(curl -s -X POST http://localhost:8000/api/agent/chat -H 'Content-Type: application/json' -d '{\"query\": \"What transaction types have the highest fraud risk?\"}')",
+      "Bash(curl -s http://localhost:8000/api/agent/knowledge-base)",
+      "Bash(curl -s http://localhost:3001/transactions)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -s http://localhost:3000/transactions)",
+      "Bash(curl -s http://localhost:3000/dashboard/transactions)",
+      "Bash(pkill -f \"node\")"
+    ]
+  }
+}
